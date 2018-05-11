@@ -1,0 +1,19 @@
+{
+  "name": "docker-tutorial",
+  "version": "1.0.0",
+  "description": "A start point for running a basic docker tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesadarich/docker-tutorial.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamesadarich/docker-tutorial/issues"
+  },
+  "homepage": "https://github.com/jamesadarich/docker-tutorial#readme"
+}
