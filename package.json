@@ -4,7 +4,9 @@
   "description": "A start point for running a basic docker tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p ./server-tsconfig.json",
+    "start": "node server/startup"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/jamesadarich/docker-tutorial/issues"
   },
-  "homepage": "https://github.com/jamesadarich/docker-tutorial#readme"
+  "homepage": "https://github.com/jamesadarich/docker-tutorial#readme",
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

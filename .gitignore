@@ -1,0 +1,8 @@
+# npm
+node_modules
+
+# typescript
+*.js
+dist
+public
+server
