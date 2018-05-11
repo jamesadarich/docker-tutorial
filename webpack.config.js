@@ -1,5 +1,5 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var path = require('path');
+var HtmlWebpackPlugin = require("html-webpack-plugin");
+var path = require("path");
 
 module.exports = {
     entry: "./src/app.tsx",
@@ -14,7 +14,19 @@ module.exports = {
     module: {
         rules: [
             // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-            { test: /\.tsx?$/, loader: "ts-loader" }
+            { 
+                test: /\.tsx?$/,
+                loader: "ts-loader"
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    { loader: "style-loader" },
+                    { loader: "css-loader" },
+                    { loader: "sass-loader" }
+                ]
+            }
+            
         ]
     },
     plugins: [ new HtmlWebpackPlugin() ]

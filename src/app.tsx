@@ -1,3 +1,5 @@
+require("./app.scss");
+
 import * as React from  "react";
 import { render } from "react-dom";
 
